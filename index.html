@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeechPerfect - Digital Twin Game for Public Speaking</title>
+    <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-background"></div>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-wrapper">
+                    <h1 class="logo">
+                        <span class="logo-main">Speech</span><span class="logo-accent">Perfect</span>
+                    </h1>
+                    <div class="logo-underline"></div>
+                </div>
+                <p class="subtitle">
+                    <span class="subtitle-icon">🎯</span>
+                    The Heckler Challenge
+                </p>
+                <p class="tagline">Digital Twin Game for Public Speaking Skill Evaluation</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Tab Navigation -->
+            <div class="tabs-container">
+                <div class="tabs-nav">
+                    <button class="tab-button active" data-tab="poster" id="posterTab">
+                        <span>Research Poster</span>
+                    </button>
+                    <button class="tab-button" data-tab="slides" id="slidesTab">
+                        <span>Presentation Slides</span>
+                    </button>
+                </div>
+
+                <!-- Poster Tab Content -->
+                <div class="tab-content active" id="posterContent">
+                    <section class="poster-section">
+                        <div class="poster-container">
+                            <img src="poster/SpeechPerfect Digital Twin Game for Improving Public Speaking Skill.png" 
+                                 alt="SpeechPerfect Research Poster" 
+                                 class="poster-image">
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Slides Tab Content -->
+                <div class="tab-content" id="slidesContent">
+                    <section class="pdf-section">
+                        <div class="pdf-container">
+                            <div class="pdf-loader" id="pdfLoader">
+                                <div class="spinner"></div>
+                                <p>Loading PDF...</p>
+                            </div>
+                            <iframe src="slides/Digital_Twin_Game_for_Public_Speaking_Skill_Evaluation.pdf#toolbar=1&navpanes=0&scrollbar=1&zoom=page-fit" 
+                                    class="pdf-viewer"
+                                    id="pdfViewer"
+                                    title="Digital Twin Game for Public Speaking Skill Evaluation PDF">
+                            </iframe>
+                        </div>
+                        <div class="pdf-fallback" id="pdfFallback" style="display: none;">
+                            <p>If the PDF doesn't load in your browser, <a href="slides/Digital_Twin_Game_for_Public_Speaking_Skill_Evaluation.pdf" target="_blank" class="pdf-link">click here to open it directly</a></p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SpeechPerfect Khairun Nisaa Dawi Cahyono. All rights reserved.</p>
+            <p class="footer-tags">FYP • Quality Education • Decent Work and Economic Growth</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
